@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller #1</title>
+  <script src="JS/coordenadas.js" defer></script>
+  <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+  <header>
+    <h1>Programación de Interfaces Interactivas con JavaScript</h1>
+  </header>
+  <nav id="barra de navegacion">
+    <ul>
+      <li><a href="index.html">Problema 1</a></li>
+      <li><a href="empresa.html">Problema 2</a></li>
+      <li><a href="coordenadas.html">Problema 3</a></li>
+      <li><a href="clima.html">Problema 4</a></li>
+    </ul>
+  </nav>
+  <h2>Calcular la Pendiente de 2 Puntos en el Plano Cartesiano</h2>
+  <h3>Rellena los Campos con la Información Correcta para poder saber la Pendiente</h3>
+  <div class="coordenadas-contenedor">
+    <div>
+      <label for="x1">Ingresa x1</label>
+      <input type="number" id="x1" step="any" inputmode="decimal" />
+    </div>
+  
+    <div>
+      <label for="y1">Ingresa y1</label>
+      <input type="number" id="y1" step="any" inputmode="decimal" />
+    </div>
+  
+    <div>
+      <label for="x2">Ingresa x2</label>
+      <input type="number" id="x2" step="any" inputmode="decimal" />
+    </div>
+  
+    <div>
+      <label for="y2">Ingresa y2</label>
+      <input type="number" id="y2" step="any" inputmode="decimal" />
+    </div>
+  </div>
+  <br>
+  <br>
+  <div id="boton">
+    <button id="calcBtn" type="button">Calcular Pendiente</button>
+  </div>
+  <div id="result" aria-live="polite"></div>
+  </body>
+  
+  </html>
