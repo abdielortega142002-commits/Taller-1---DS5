@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller #1</title>
+    <script src="JS/categoria.js" defer></script>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Programación de Interfaces Interactivas con JavaScript</h1>
+    </header>
+    <nav id="barra de navegacion">
+        <ul>
+            <li><a href="index.html">Problema 1</a></li>
+            <li><a href="empresa.html">Problema 2</a></li>
+            <li><a href="coordenadas.html">Problema 3</a></li>
+            <li><a href="clima.html">Problema 4</a></li>
+        </ul>
+    </nav>
+    <h2>Categoría de Empleado</h2>
+    <h3>Introduce un código de 3 cifras para determinar la categoria de empleado al cual perteneces</h3>
+    <br>
+    <div class="contenedor">
+        <label for="code">Introduce tu código:</label>
+        <input type="text" id="code" name="code" maxlength="3" inputmode="numeric" autocomplete="off"
+            aria-describedby="hint">
+        <br>
+        <br>
+        <button id="checkBtn" type="button">Calcular categoría</button>
+    </div>
+    <div id="result" aria-live="polite"></div>
+</body>
+</html>
