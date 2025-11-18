@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller #1</title>
+  <script src="JS/clima.js" defer></script>
+  <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+  <header>
+    <h1>Programación de Interfaces Interactivas con JavaScript</h1>
+  </header>
+  <nav id="barra de navegacion">
+    <ul>
+      <li><a href="index.html">Problema 1</a></li>
+      <li><a href="empresa.html">Problema 2</a></li>
+      <li><a href="coordenadas.html">Problema 3</a></li>
+      <li><a href="clima.html">Problema 4</a></li>
+    </ul>
+  </nav>
+  <h2>Calcular el Estado del Clima</h2>
+  <h3>Rellena los Campos Correctamente para Determinar el Estado del Clima</h3>
+  <div class="contenedor">
+    <div>
+      <label for="temp">Ingresa la Temperatura (°C)</label>
+      <input type="number" id="temp" name="temp" step="any" inputmode="decimal" placeholder="Ej. 23.5">
+    </div>
+    <br>
+    <br>
+    <div>
+      <label for="hum">Ingresa la Humedad Relativa (%)</label>
+      <input type="number" id="hum" name="hum" step="any" inputmode="decimal" min="0" max="100" placeholder="0 - 100">
+    </div>
+    <br>
+    <br>
+    <div>
+      <button id="checkBtn" type="button">Determinar Clima</button>
+    </div>
+  </div>
+  <div id="result" aria-live="polite"></div>
+</body>
+
+</html>
