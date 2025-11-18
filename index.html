@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller #1</title>
+    <script src="JS/entrada.js" defer></script>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Programación de Interfaces Interactivas con JavaScript</h1>
+    </header>
+    <nav id="barra de navegacion">
+        <ul>
+            <li><a href="index.html">Problema 1</a></li>
+            <li><a href="empresa.html">Problema 2</a></li>
+            <li><a href="coordenadas.html">Problema 3</a></li>
+            <li><a href="clima.html">Problema 4</a></li>
+        </ul>
+    </nav>
+    <h2>Parque de Diversiones</h2>
+    <h3>Ingresa tu Edad para Calcular el Costo de tu Entrada al Parque de Diversiones</h3>
+    <div class="contenedor">
+      <label for="age">Edad:</label>
+      <input type="number" id="age" name="age" min="0" step="1">
+      <br>
+      <br>
+      <button id="calculateBtn" type="button">Calcular Costo</button>
+    </div>
+    <br>
+    <br>
+    <div id="result" aria-live="polite"></div>
+    </body>
+    
+    </html>
